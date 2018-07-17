@@ -1,0 +1,26 @@
+nav {
+	position: absolute;
+	top: 0;
+}
+.container-fluid {
+	max-height: 100vh;
+	position: absolute;
+	top: 0;
+}
+
+#app-pic {
+	height: 400px;
+}
+
+#playstore-pic {
+	height: 80px;
+	margin-bottom: 50px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	/*height: 100px;*/
+	width: 100%;
+	margin: 0;
+}
