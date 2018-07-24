@@ -12,21 +12,21 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body class="content">
-	<nav class="navbar navbar-expand-lg navbar-light">
-		<a href="" class="navbar-brand"><i class="fas fa-bus-alt fa-2x"></i>theBus</a>
+	<nav class="navbar navbar-expand-lg navbar-light" >
+		<a href="" class="navbar-brand"><i class="fas fa-bus-alt fa-2x" id="top"></i>theBus</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarlist">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarlist">
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
+				<li class="nav-item active">
 					<a href="index.html" class="nav-link">Home</a>
 				</li>
-				<li class="nav-item active">
+				<li class="nav-item ">
 					<a href="about-us.html" class="nav-link">About</a>
 				</li>
 				<li class="nav-item">
-					<a href="index.html#contact-us" class="nav-link">Contact Us</a>
+					<a href="#" class="nav-link">Reach Us</a>
 				</li>
 			</ul>
 		</div>
@@ -36,18 +36,28 @@
 	<div class="row">
 		<div class="col-lg-6 offset-lg-3">
 			<div class="article">
-				<h2>theBus App</h2>
+				<h2>We'd like to hear from you!</h2>
 				<hr>
 				<p>
-					TheBus App was developed during our BSIT Capstone to address the need of Cebuanos all over the island, to have an idea whether a bus was available or on the way. As a tourist destination one of the mode of transportation in Cebu is via bus. As buses are what mostly is available and because its available 24/7.
+					This startup project is just starting. We'd like to here and collab with you. 
 				</p>
-				<p>
-					As one of those who use buses, one of the issues that we wanna address is that becuase there is no proper terminal there is the question of when will the bus arrive? and which destination will the bus go. For foreigner we can assume that they have no idea how much the fare, the duration and etc.
-				</p>
-
-				<p>
-					that is why we developed this app, to add information technology in the field of transportation.
-				</p>
+					<div class="form-group reach-us">
+						<label for="#name"><span>*</span>Name</label>
+						<input type="text" class="form-control" id="name" required="yes">
+						<label for="#email"><span>*</span>Email</label>
+						<input type="email" class="form-control" id="email" required="yes">
+						<label for="#comment"><span>*</span>Comment</label>
+						<textarea name="comment" id="comment" cols="30" rows="5" class="form-control" required="yes"></textarea>
+						<button class="btn btn-success my-4" id="contact-us-btn">Submit</button>
+						<div id="myModal" class="modal">
+						  <!-- Modal content -->
+						  <div class="modal-content">
+						    <p>Sorry! This function is not yet available.</p>
+						   <span class="close">Close &times;</span>
+						  </div>
+						</div>
+					</div>
+				</div
 			</div>		
 		</div>
 	</div>

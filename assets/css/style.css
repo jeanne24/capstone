@@ -229,6 +229,34 @@ footer p{
 
 }
 
+.find-out {
+	background-image: url(../images/about-us-bg.jpg);
+	background-size: cover;
+	min-height: 85%;
+	top: 0;
+	padding: 50px;
+	position: relative;
+	z-index: -10;
+}
+.find-out:after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color:rgba(255, 255, 255,0.4);
+	z-index: -9;
+}
+
+.reach-us {
+	padding: 50px;
+	background-color: grey;
+	position: relative;
+	z-index: 10000;
+	border-radius: 5px;
+}
+
 .download footer {
 	position: absolute;
 	bottom: 0px;
