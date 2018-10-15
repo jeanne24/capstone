@@ -9,11 +9,13 @@
 
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 <base target="_blank">
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light" >
+	<nav class="navbar navbar-expand-lg navbar-light">
 		<a href="" class="navbar-brand"><i class="fas fa-bus-alt fa-2x" id="top"></i>theBus</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarlist">
 			<span class="navbar-toggler-icon"></span>
@@ -70,7 +72,7 @@
 					<div class="col-lg-6 img-left">
 						<!-- <img src="assets/images/monitoring.jpg"> -->
 					</div>
-					<div class="col-lg-6">
+					<div class="col-lg-6 mt-4">
 						<h3>Management Side</h3>
 						<p>
 							Enables monitoring and managing fleet. 
@@ -81,7 +83,7 @@
 					<div class="col-lg-6 order-lg-12 order-sm-12 order-md-1 img-right">
 						<!-- <img src="assets/images/waiting.jpg"> -->
 					</div>
-					<div class="col-lg-6 order-lg-1 order-sm-1 order-md-12">
+					<div class="col-lg-6 order-lg-1 order-sm-1 order-md-12 mt-4">
 						<h3>Application Side</h3>
 						<p>
 							Commuters are able to see the buses and query busses destination as well as their fare and etc.
@@ -94,8 +96,8 @@
 			<div class="col-lg-12">
 				<h2 class="mb-5">How to use it</h2>
 				<div class="row">
-					<div class="col-lg-3 col-md-6 col-sm-6">
-						<div class="card">
+					<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+						<div class="card mx-auto">
 							<img src="assets/images/galaxys4_black_portrait.png" class="card-img-top"alt="Download from android image">
 							<div class="card-body">
 								<h5 class="card-title">Step 1</h5>
@@ -104,7 +106,7 @@
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-6">
-						<div class="card">
+						<div class="card mx-auto">
 							<img src="assets/images/register-mockup.png" class="card-img-top" alt="Register app image">
 							<div class="card-body">
 								<h5 class="card-title">Step 2</h5>
@@ -113,7 +115,7 @@
 						</div>				
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-6">
-						<div class="card">
+						<div class="card mx-auto">
 							<img src="assets/images/find-mockup.png" class="card-img-top" alt="Log-into the app image">
 							<div class="card-body">
 								<h5 class="card-title">Step 3</h5>
@@ -122,7 +124,7 @@
 						</div>				
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-6">
-						<div class="card">
+						<div class="card mx-auto">
 							<img src="assets/images/map-mockup.png" class="card-img-top" alt="Use app maps on searching buses">
 							<div class="card-body">
 								<h5 class="card-title">Step 4</h5>
@@ -178,9 +180,6 @@
 					</div>
 					</div>
 			<!-- </form> -->
-			<h4>Call Us</h4>
-			<p><i class="fas fa-phone fa-lg"> Smart: 0999999999</i> or 
-			<i class="fas fa-phone fa-lg">Globe: 0999999999</i> </p>
 			</div>
 		</div>
 	</div>
@@ -288,6 +287,13 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+let nav = $('.navbar-light');
+
+$(document).scroll(function() {
+    nav.css({'background-color': $(this).scrollTop()>100 ? "#679c65":"transparent"});
+});
+
 </script>
 
 
