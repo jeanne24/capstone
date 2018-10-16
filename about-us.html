@@ -126,6 +126,7 @@
 	$('.carousel').carousel({
   interval: 1000
 });
+	let nav = $('.navbar-light');
 
 	$(document).scroll(function() {
     nav.css({'background-color': $(this).scrollTop()>100 ? "#679c65":"transparent"});

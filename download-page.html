@@ -130,7 +130,8 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}
+};
+let nav = $('.navbar-light');
 
 	$(document).scroll(function() {
     nav.css({'background-color': $(this).scrollTop()>100 ? "#679c65":"transparent"});

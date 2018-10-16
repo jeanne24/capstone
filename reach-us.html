@@ -107,11 +107,13 @@
 <script src="assets/js/bootstrap.min.js"></script>
 
 <script type="text/javascript">
-	$('.carousel').carousel({
+$('.carousel').carousel({
   interval: 1000
-})
+});
 
-		$(document).scroll(function() {
+let nav = $('.navbar-light');
+
+$(document).scroll(function() {
     nav.css({'background-color': $(this).scrollTop()>100 ? "#679c65":"transparent"});
 });
 </script>

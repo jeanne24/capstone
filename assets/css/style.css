@@ -24,8 +24,11 @@ body, html {
 }
 .navbar-light {
 	background-color: transparent;
-    color: white;
     transition: all .8s ease;
+}
+
+.navbar-light li{
+    color: white;
 }
 .main {
 	position: relative;
