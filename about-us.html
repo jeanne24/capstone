@@ -125,7 +125,11 @@
 <script type="text/javascript">
 	$('.carousel').carousel({
   interval: 1000
-})
+});
+
+	$(document).scroll(function() {
+    nav.css({'background-color': $(this).scrollTop()>100 ? "#679c65":"transparent"});
+});
 </script>
 
 </body>

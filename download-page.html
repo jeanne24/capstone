@@ -131,6 +131,10 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+	$(document).scroll(function() {
+    nav.css({'background-color': $(this).scrollTop()>100 ? "#679c65":"transparent"});
+});
 </script>
 
 </body>
